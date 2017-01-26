@@ -1,0 +1,24 @@
+<% if notice %>
+<div class="alert alert-info"><%= notice %></div>
+<% end %>
+
+<div class="row">
+	<div class="col-md-4 col-md-offset-4">
+		<div class="panel panel-default">
+			<div class="panel-body">
+<p>
+	<strong>Image:</strong>
+	<%= image_tag @image.avatar.url(:medium) %>
+  	<br/>
+  <strong>Description:</strong>
+  <%= @image.description %>
+</p>
+<div class="text-center">
+	<%= link_to 'Edit', edit_admin_image_path(@image) %> |
+	<%= link_to 'Back', admin_images_path %>
+</div>
+</div>
+</div>
+
+</div>
+</div>

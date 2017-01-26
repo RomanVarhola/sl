@@ -1,0 +1,52 @@
+<div class="slide" id="slide8" data-slide="8" data-stellar-background-ratio="0.5">
+	<div class="container clearfix">
+		
+		<div id="content" class="col-md-12">
+			<h1>Контакти</h1>
+			<h5>Наша компанія стане хорошим помічником в створенні та розвитку Вашого бізнесу</h5>
+		</div>
+		<div class="clear"></div>
+		
+		<div class="col-md-12 contact_det_block">
+			<h4>Як з нами зв'язатися</h4>
+			<ul class="foot_block_intouch">
+				<li class="touch_phone"><p>(+38) 067 7130 247</p></li>
+                <li class="touch_phone"><p>(+38) 067 8049 407</p></li>
+				<li class="touch_mail"><a href="mailto:roman.varhola@gmail.com">roman.varhola@gmail.com </a></li>
+                <li class="touch_mail"><a href="mailto:yaroslav.varhola@mail.ru">yaroslav.varhola@mail.ru </a></li>
+				<li class="touch_site"><a href="javascript:void(0);">www.slcolection.com.ua</a></li>
+			</ul>
+			<p>Висока якість, модний дизайн, ексклюзивні моделі, великий асортимент і доступні ціни, зроблять співпрацю з нами легкою, приємною і вигідною.</p>
+		</div>
+		<div class="clear"></div>
+		
+		<div class="col-md-12">
+			<h4>Контактна форма</h4>
+			<div class="contact_form"> 
+			<div id="note"></div>
+				<div id="fields"> 
+				<%= form_tag(:welcome_email, id: :form_welcome_email, remote: true) do |f| %>
+					<div class="grid_6">
+          	<%= text_field_tag :name, nil, :placeholder => 'Ім’я' %>
+          	<%= text_field_tag :phone, nil, :placeholder => 'Телефон' %>
+          	<%= text_field_tag :email, nil, :placeholder => 'Email' %>
+          </div>
+          <div class="grid_6 omega">
+          	<%= text_area_tag :description, nil, :placeholder => 'Повідомлення' %>
+          </div>
+         </div>
+      </div>
+          
+        <div class="clear position"></div>
+					<%=	button_tag 'Очистити', :type => 'reset', class: 'contact_btn' %>
+					<%= submit_tag 'Надіслати', class: 'contact_btn' %>
+				<% end %>
+			</div>
+		</div>		
+		<div class="clear"></div>
+
+	</div>
+	
+	<div id="map_block"><iframe width="100%" height="722" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d82337.62925578748!2d24.057374647152177!3d49.84150085061679!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1suk!2sua!4v1422743938164"></iframe></div> 
+	
+</div>
